@@ -1,0 +1,40 @@
+ಠ_ಠ
+===
+`ಠ_ಠ` is an IRC client/IRC client framework.
+
+Minimal
+-------
+Out of the box, the clients are absolutely minimal, providing basically nothing but a text-stream
+into and out of a set of IRC “items”:
+
+![ಠ_ಠ out of the box](http://elliottcable.s3.amazonaws.com/p/original-%E0%B2%A0_%E0%B2%A0.png)
+
+These are completely UNIX-style compatible, and you can pipe to/from “windows” and individual IRC
+itmes, such as a specific channel:
+
+```bash
+ಠ_ಠ '##Hat' | grep '^elliottcable: '
+```
+
+Multiple-client
+---------------
+A single ಠ_ಠ server will remain connected to IRC for you at all times, and you can “attach” multiple
+clients to it in separate terminals, viewing different channels, queries, or combinations of
+channels and queries. You can define ‘windows’ that will retain specific combinations of channels
+and queries, and retain scrollback from them for when you return at a later point.
+
+Unbelievably extensible
+-----------------------
+ಠ_ಠ is extremly extensible through JavaScript, and provides full functionality to construct as
+complex/powerful an interface as you would like. The server itself can run scripts that modify your
+overall IRC experience, while specific windows (as described above) can be scripted to customize the
+experience in ways unique to particular groups of channels and queries.
+
+Most crucially, the entire interface itself (beyond what is visible in the screenshot above) is
+built via the scripting API; and you have full access to ncurses-level interface-building
+functionality to implement everything from timestamps, to nickname hilights, to user lists, to
+statusbars. You can have an interface as simple as [ii][] or as complex as [irssi][], entirely through
+user-built scripts.
+
+   [ii]: <http://tools.suckless.org/ii/> "a minimalist FIFO and filesystem-based IRC client"
+   [irssi]: <http://irssi.org/> "themable ncurses IRC client"
