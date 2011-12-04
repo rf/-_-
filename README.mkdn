@@ -18,14 +18,14 @@ itmes, such as a specific channel:
 
 Multiple-client
 ---------------
-A single ಠ_ಠ server will remain connected to IRC for you at all times, and you can “attach” multiple
+A single `ಠ_ಠ` server will remain connected to IRC for you at all times, and you can “attach” multiple
 clients to it in separate terminals, viewing different channels, queries, or combinations of
 channels and queries. You can define ‘windows’ that will retain specific combinations of channels
 and queries, and retain scrollback from them for when you return at a later point.
 
 Unbelievably extensible
 -----------------------
-ಠ_ಠ is extremly extensible through JavaScript, and provides full functionality to construct as
+`ಠ_ಠ` is extremly extensible through JavaScript, and provides full functionality to construct as
 complex/powerful an interface as you would like. The server itself can run scripts that modify your
 overall IRC experience, while specific windows (as described above) can be scripted to customize the
 experience in ways unique to particular groups of channels and queries.
